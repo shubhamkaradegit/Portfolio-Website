@@ -1,0 +1,52 @@
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+    /* hamburger show */
+    .menu-btn {
+        display: block;
+    }
+
+    /* hide desktop buttons on mobile */
+    .nav-buttons {
+        display: none;
+    }
+
+    /* change menu to dropdown */
+    #nav-links {
+        position: absolute;
+        top: 59px;
+        right: 0;
+        background-color: #2c3e50;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    #nav-links li a {
+        font-size: 18px;
+    }
+
+    nav .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .text {
+        margin-left: 0;
+    }
+}

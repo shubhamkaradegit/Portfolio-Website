@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/my photo.png" type="image/png">
+    <title>Shubham Karade - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Shubham Karade</div>
+
+            <!-- Hamburger Menu Button -->
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button id="downloadBtn" class="resume-btn">Resume</button>
+
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="about">
+        <div class="container" style="text-align:center; flex-direction:column;">
+            <img src="assets/my photo.png" alt="Shubham Karade">
+            <h2 class="about-title">
+                Hello, I am <span id="typing-text"></span>
+            </h2>
+
+            <p>My name is Shubham Karade, and I am currently pursuing a B.Tech degree from St. Francis Institute of Technology. I achieved 94.80% in SSC and 88.50% in HSC, showcasing my dedication to academics. I specialize in Web Development and have a strong command of Java. I am passionate about coding and continuously strive to learn new skills to stay updated with the latest technologies. My goal is to become a proficient developer and contribute to impactful projects. I am also exploring areas like UI/UX design to enhance my versatility. With a growth mindset, I am committed to building a successful career in the tech industry.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project-cards">
+
+                <div class="project-card" onclick="openProject('project.html')">
+                    <img src="assets/project-img1.jfif" class="project-img">
+                    <h3>Project 1: Web Portfolio</h3>
+                    <p>A responsive portfolio website with animations and dark mode.</p>
+                </div>
+
+                <div class="project-card" onclick="openProject('project.html')">
+                    <img src="assets/project-img-2.jfif" class="project-img">
+                    <h3>Project 2: Chat Application</h3>
+                    <p>A real-time chat app built with Node.js & Socket.io.</p>
+                </div>
+
+                <div class="project-card" onclick="openProject('project.html')">
+                    <img src="assets/project-img-3.jfif" class="project-img">
+                    <h3>Project 3: Data Visualization Tool</h3>
+                    <p>Graph and chart visualization using D3.js.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skills-scroll">
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        class="skill-icon">
+
+                    <!-- Duplicate for endless loop -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        class="skill-icon">
+
+                </div>
+            </div>
+
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-react"></i> React</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                        <li><i class="fa-solid fa-server"></i> Express.js</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                        <li><i class="fa-solid fa-database"></i> MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-git-alt"></i> Git/Github</li>
+                        <li><i class="fa-solid fa-code"></i> VS Code</li>
+                        <li><i class="fa-solid fa-terminal"></i> Terminal</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Intern at Tech Company</h3>
+                <p><strong>Duration:</strong> June 2022 - August 2022</p>
+                <p>Worked on developing web applications and gained experience in team collaboration and agile
+                    methodologies.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Freelance Developer</h3>
+                <p><strong>Duration:</strong> Ongoing</p>
+                <p>Built custom websites and applications for clients, focusing on user experience and performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/shubhamkaradegit" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://in.linkedin.com/in/shubham-karade-b35246333?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 Shubham Karade. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
