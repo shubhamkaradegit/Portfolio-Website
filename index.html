@@ -49,7 +49,13 @@
                 Hello, I am <span id="typing-text"></span>
             </h2>
 
-            <p>My name is Shubham Karade, and I am currently pursuing a B.Tech degree from St. Francis Institute of Technology. I achieved 94.80% in SSC and 88.50% in HSC, showcasing my dedication to academics. I specialize in Web Development and have a strong command of Java. I am passionate about coding and continuously strive to learn new skills to stay updated with the latest technologies. My goal is to become a proficient developer and contribute to impactful projects. I am also exploring areas like UI/UX design to enhance my versatility. With a growth mindset, I am committed to building a successful career in the tech industry.
+            <p>My name is Shubham Karade, and I am currently pursuing a B.Tech degree from St. Francis Institute of
+                Technology. I achieved 94.80% in SSC and 88.50% in HSC, showcasing my dedication to academics. I
+                specialize in Web Development and have a strong command of Java. I am passionate about coding and
+                continuously strive to learn new skills to stay updated with the latest technologies. My goal is to
+                become a proficient developer and contribute to impactful projects. I am also exploring areas like UI/UX
+                design to enhance my versatility. With a growth mindset, I am committed to building a successful career
+                in the tech industry.
             </p>
         </div>
     </section>
@@ -57,30 +63,248 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-
+            <h3 class="project-type">Major Projects</h3>
             <div class="project-cards">
 
-                <div class="project-card" onclick="openProject('project.html')">
-                    <img src="assets/project-img1.jfif" class="project-img">
-                    <h3>Project 1: Web Portfolio</h3>
-                    <p>A responsive portfolio website with animations and dark mode.</p>
+                <div class="project-card" onclick="openProject('MajorProject1.html')">
+                    <img src="assets/WanderLust-01-10-2026_10_11_PM.png" class="project-img">
+                    <h3>Wanderlust – Airbnb Clone</h3>
+                    <p>Wanderlust is a full-stack Airbnb clone that allows users to explore, add, and manage travel
+                        listings.
+                        The platform includes authentication, listing management, and user reviews, providing a
+                        real-world
+                        booking website experience.</p>
                 </div>
 
-                <div class="project-card" onclick="openProject('project.html')">
-                    <img src="assets/project-img-2.jfif" class="project-img">
-                    <h3>Project 2: Chat Application</h3>
-                    <p>A real-time chat app built with Node.js & Socket.io.</p>
+                <div class="project-card" onclick="openProject('MajorProject2.html')">
+                    <img src="assets/Everything-delivered-in-minutes-Blinkit-01-10-2026_10_15_PM.png" class="project-img">
+                    <h3>Blinkit Clone</h3>
+                    <p>Blinkit Clone is a major front-end project developed using pure HTML and CSS.
+                        The project replicates the UI of Blinkit’s quick-commerce platform, focusing on
+                        layout design, responsiveness, and pixel-perfect UI components.</p>
                 </div>
 
                 <div class="project-card" onclick="openProject('project.html')">
                     <img src="assets/project-img-3.jfif" class="project-img">
-                    <h3>Project 3: Data Visualization Tool</h3>
-                    <p>Graph and chart visualization using D3.js.</p>
+                    <h3>Working .....</h3>
+                    <p></p>
                 </div>
 
             </div>
+
+            <h3 class="project-type">Minor Projects</h3>
+
+            <div class="slider-container">
+                <button class="slide-btn left" onclick="slideLeft('minor-slider')">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="project-slider" id="minor-slider">
+
+                    <div class="project-card" onclick="openProject('MiniProject1.html')">
+                        <img src="assets/React-App-01-10-2026_10_26_PM.png" class="project-img">
+                        <h3>Search Movie (React)</h3>
+                        <p>Search Movie is a mini React application that allows users to search for movies
+                            and view basic details using a public movie API. The project focuses on API
+                            integration, state management, and dynamic UI updates.</p>
+                    </div>
+
+                    <div class="project-card" onclick="openProject('MiniProject2.html')">
+                        <img src="assets/todo-01-10-2026_10_29_PM.png" class="project-img">
+                        <h3>Todo App (React)</h3>
+                        <p>Todo App is a mini React application that helps users manage daily tasks efficiently.
+                            Users can add, delete, and mark tasks as completed, focusing on React state management
+                            and component-based architecture.</p>
+                    </div>
+
+                    <div class="project-card" onclick="openProject('MiniProject3.html')">
+                        <img src="assets/mini-project-react-01-10-2026_10_24_PM.png" class="project-img">
+                        <h3>Weather App (React)</h3>
+                        <p>Weather App is a mini React application that provides real-time weather information
+                            for any city. The app fetches live data from a weather API and displays temperature,
+                            humidity, and weather conditions with a clean and responsive UI.</p>
+                    </div>
+
+                    <div class="project-card" onclick="openProject('MiniProject4.html')">
+                        <img src="assets/Spotify-Web-Player-Music-for-everyone-01-10-2026_10_20_PM.png" class="project-img">
+                        <h3>Spotify Clone (HTML & CSS)</h3>
+                        <p>This project is a front-end clone of Spotify built using only HTML and CSS.
+                            It focuses on recreating Spotify’s modern UI, layout, and visual components
+                            without using JavaScript, ensuring clean structure and responsive styling.</p>
+                    </div>
+
+                </div>
+
+                <button class="slide-btn right" onclick="slideRight('minor-slider')">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
     </section>
+
+    <!-- <section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        ========== MAJOR PROJECTS ==========
+        <h3 class="project-type">Major Projects</h3>
+
+        <div class="slider-container">
+            <button class="slide-btn left" onclick="slideLeft('major-slider')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="project-slider" id="major-slider">
+
+                <div class="project-card" onclick="openProject('project.html')">
+                    <img src="assets/project-img1.jfif" class="project-img">
+                    <h3>Web Portfolio</h3>
+                    <p>Personal portfolio with dark mode & animations.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-2.jfif" class="project-img">
+                    <h3>Chat Application</h3>
+                    <p>Real-time chat using Node.js & Socket.io.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-3.jfif" class="project-img">
+                    <h3>Data Visualization Tool</h3>
+                    <p>D3.js based analytics dashboard.</p>
+                </div>
+
+            </div>
+
+            <button class="slide-btn right" onclick="slideRight('major-slider')">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        ========== MINOR PROJECTS ==========
+        <h3 class="project-type">Minor Projects</h3>
+
+        <div class="slider-container">
+            <button class="slide-btn left" onclick="slideLeft('minor-slider')">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="project-slider" id="minor-slider">
+
+                <div class="project-card">
+                    <img src="assets/project-img1.jfif" class="project-img">
+                    <h3>Weather App</h3>
+                    <p>Weather app using OpenWeather API.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-2.jfif" class="project-img">
+                    <h3>To-Do App</h3>
+                    <p>Task manager with local storage.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-3.jfif" class="project-img">
+                    <h3>Calculator</h3>
+                    <p>Simple calculator using JavaScript.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-3.jfif" class="project-img">
+                    <h3>Calculator</h3>
+                    <p>Simple calculator using JavaScript.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-3.jfif" class="project-img">
+                    <h3>Calculator</h3>
+                    <p>Simple calculator using JavaScript.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-3.jfif" class="project-img">
+                    <h3>Calculator</h3>
+                    <p>Simple calculator using JavaScript.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/project-img-1.jfif" class="project-img">
+                    <h3>Landing Page</h3>
+                    <p>Responsive landing page.</p>
+                </div>
+
+            </div>
+
+            <button class="slide-btn right" onclick="slideRight('minor-slider')">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+    </div>
+</section> -->
+
+
+
+    <!-- <h3 class="project-type">Major Projects</h3>
+
+<div class="slider-container">
+
+    <button class="slide-btn left" onclick="slideLeft('major-slider')">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="project-slider" id="major-slider">
+
+        <div class="project-card">
+            <img src="assets/project-img1.jfif" class="project-img">
+            <h3>Web Portfolio</h3>
+            <p>Personal portfolio website.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/project-img-2.jfif" class="project-img">
+            <h3>Chat App</h3>
+            <p>Real-time chat application.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/project-img-3.jfif" class="project-img">
+            <h3>Analytics Tool</h3>
+            <p>Data visualization dashboard.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/project-img1.jfif" class="project-img">
+            <h3>Extra Project</h3>
+            <p>More projects example.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/project-img1.jfif" class="project-img">
+            <h3>Extra Project</h3>
+            <p>More projects example.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/project-img1.jfif" class="project-img">
+            <h3>Extra Project</h3>
+            <p>More projects example.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/project-img1.jfif" class="project-img">
+            <h3>Extra Project</h3>
+            <p>More projects example.</p>
+        </div>
+
+    </div>
+
+    <button class="slide-btn right" onclick="slideRight('major-slider')">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+</div> -->
+
 
 
     <section id="skills">
@@ -201,7 +425,8 @@
         <div class="container">
             <div class="social-links">
                 <a href="https://github.com/shubhamkaradegit" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://in.linkedin.com/in/shubham-karade-b35246333?trk=people-guest_people_search-card" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://in.linkedin.com/in/shubham-karade-b35246333?trk=people-guest_people_search-card"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
             <p>&copy; 2023 Shubham Karade. All rights reserved.</p>
         </div>

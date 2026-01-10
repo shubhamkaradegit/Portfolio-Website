@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project: Weather App (React)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .container {
+            background-color: #2a2a2a;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        body.dark h1 {
+            color: #e0e0e0;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .project-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-img img {
+            width: 100%;
+            max-height: 300px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: contain;
+            border: 1px solid #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+        <h1>Mini Project: Weather App (React)</h1>
+
+        <div class="project-img">
+            <img src="assets/mini-project-react-01-10-2026_10_24_PM.png" alt="Weather App Screenshot">
+        </div>
+
+        <p>
+            <strong>Description:</strong>  
+            Weather App is a mini React application that provides real-time weather information
+            for any city. The app fetches live data from a weather API and displays temperature,
+            humidity, and weather conditions with a clean and responsive UI.
+        </p>
+
+        <p>
+            <strong>Technologies Used:</strong>  
+            React.js, JavaScript (ES6), HTML, CSS, Weather API
+        </p>
+
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Search weather by city name</li>
+            <li>Real-time weather data using API</li>
+            <li>Temperature, humidity & weather condition display</li>
+            <li>React hooks (useState, useEffect)</li>
+            <li>Responsive UI</li>
+        </ul>
+
+        <p>
+            <strong>View on GitHub:</strong>
+            <a href="https://github.com/shubhamkaradegit/weather-forecast-react-app" target="_blank">
+                GitHub Repository
+            </a>
+        </p>
+
+        <p>
+            <strong>Live Demo:</strong>
+            <a href="https://karadeweather.netlify.app/" target="_blank">
+                Live Demo
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>

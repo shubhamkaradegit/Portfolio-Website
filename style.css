@@ -338,6 +338,164 @@ body.dark #about .container p{
     color: #555;
 }
 
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* REAL SLIDER */
+.project-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;       /* 🔥 MUST */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+/* scrollbar hide (optional) */
+.project-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card {
+    /* min-width: 300px;       🔥 MUST */
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 15px;
+    flex-shrink: 0;         /* 🔥 MUST */
+    width: 355px;
+    border: 1px solid rgb(133, 130, 130);
+    margin-left: 18px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--text-secondary);  
+    margin: 0; 
+}
+
+.project-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid rgb(133, 130, 130);  
+}
+.project-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.project-type {
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+
+}
+
+/* Buttons */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slide-btn.left {
+    left: -15px;
+}
+
+.slide-btn.right {
+    right: -15px;
+}
+
+
+/* SLIDER ARROWS – MODERN STYLE */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #005cef, #6366f1);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Arrow Icon */
+.slide-btn i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Positioning */
+.slide-btn.left {
+    left: -20px;
+}
+
+.slide-btn.right {
+    right: -20px;
+}
+
+/* Hover Effect */
+.slide-btn:hover {
+    background: linear-gradient(135deg, #4338ca, #4f46e5);
+    box-shadow: 0 15px 30px rgba(79, 70, 229, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Arrow Move on Hover */
+.slide-btn.left:hover i {
+    transform: translateX(-3px);
+}
+
+.slide-btn.right:hover i {
+    transform: translateX(3px);
+}
+
+/* Active (Click) Effect */
+.slide-btn:active {
+    transform: translateY(-50%) scale(0.95);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .slide-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .slide-btn i {
+        font-size: 14px;
+    }
+}
+
+
 /* Dark mode */
 body.dark .project-card {
     background-color: #2a2a2a;

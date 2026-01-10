@@ -17,16 +17,7 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
 });
 
 
-// Theme Toggle
-// const themeToggle = document.getElementById('theme-toggle');
-// themeToggle.addEventListener('click', () => {
-//     document.body.classList.toggle('dark');
-//     if (document.body.classList.contains('dark')) {
-//         themeToggle.textContent = '☀️';
-//     } else {
-//         themeToggle.textContent = '🌙';
-//     }
-// });
+// Dark/Light Theme Toggle
 
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
@@ -89,8 +80,8 @@ typeEffect();
 
 // Project Details 
 
-function openProject() {
-    window.location.href = "project.html";
+function openProject(projectUrl) {
+    window.location.href = projectUrl;
 }
 
 
@@ -102,3 +93,32 @@ document.querySelectorAll('nav a').forEach(anchor => {
         target.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+// Project Slider
+
+// function slideLeft(sliderId) {
+//     const slider = document.getElementById(sliderId);
+//     slider.scrollLeft -= 300;
+// }
+
+// function slideRight(sliderId) {
+//     const slider = document.getElementById(sliderId);
+//     slider.scrollLeft += 300;
+// }
+
+function slideLeft(sliderId) {
+    const slider = document.getElementById(sliderId);
+    slider.scrollBy({
+        left: -320,
+        behavior: "smooth"
+    });
+}
+
+function slideRight(sliderId) {
+    const slider = document.getElementById(sliderId);
+    slider.scrollBy({
+        left: 320,
+        behavior: "smooth"
+    });
+}
+
